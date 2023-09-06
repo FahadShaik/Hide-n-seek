@@ -1,4 +1,6 @@
   @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&family=Poppins:wght@200&family=Space+Grotesk:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
 
   body {
@@ -11,15 +13,22 @@
   .header {
       display: flex;
       justify-content: space-between;
-      background: #000;
+      background: rgb(238, 144, 30);
+      background: linear-gradient(180deg, rgba(238, 144, 30, 0.3535539215686274) 69%, rgba(234, 168, 99, 0.3647584033613446) 88%);
       color: white;
       align-items: center;
 
   }
 
+  .reset-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
 
   .game-logo {
-      width: 110px;
+      width: 70px;
+      padding: 9px;
   }
 
   .game-container {
@@ -31,38 +40,36 @@
 
   .lucky-number {
       font-size: 200px;
+      font-family: 'Anton', sans-serif;
+      border-radius: 12px;
+      margin: 7px;
   }
 
-  button {
-      color: #0b0b0b;
-      padding: 0.7em 1.7em;
-      font-size: 18px;
-      border-radius: 0.5em;
-      background: #bbbbbb;
-      border: 1px solid #e8e8e8;
-      transition: all .3s;
-      box-shadow: 6px 6px 12px #c5c5c5,
-          -6px -6px 12px #ffffff;
-      font-family: 'Space Grotesk', sans-serif;
+
+  .instructions {
+      margin: 0 6px;
+      color: #000;
 
   }
 
-  button:hover {
-      border: 1px solid white;
-  }
-
-  button:active {
-      box-shadow: 4px 4px 12px #c5c5c5,
-          -4px -4px 12px #ffffff;
+  .game-title {
+      font-family: 'Luckiest Guy', cursive;
+      font-size: 22px;
+      font-weight: 200;
+      letter-spacing: 4px;
+      margin: 0;
+      color: #000;
   }
 
   .guess-input {
       border: none;
-      padding: 1rem;
+      padding: 23px 44px;
       border-radius: 1rem;
-      background: #e8e8e8;
-
+      background: #f9f8f8;
+      margin-bottom: 8px;
       transition: 0.3s;
+      font-size: 25px;
+      font-family: 'Space Grotesk', sans-serif;
   }
 
   .guess-input:focus {
@@ -73,9 +80,9 @@
       transition: 0.3s;
   }
 
-  .game-info {
-      display: flex;
-      justify-content: space-between;
+
+  .high-score {
+      color: rgb(38, 61, 30);
   }
 
   .reset-btn {
@@ -90,4 +97,76 @@
       background: #000;
       margin-top: 12px;
       padding: 20px;
+  }
+
+  .result-label,
+  .game-info {
+      font-size: 20px;
+      font-weight: bold;
+
+  }
+
+  .game-info {
+      padding: 12px;
+  }
+
+  .score {
+      background: green;
+      padding: 7px;
+      color: white;
+      border-radius: 20px;
+  }
+
+  /* CSS */
+  .button-27,
+  .button-submit {
+      appearance: none;
+      background-color: #000000;
+      border: 2px solid #1A1A1A;
+      border-radius: 15px;
+      box-sizing: border-box;
+      font-family: 'Space Grotesk', sans-serif;
+      letter-spacing: 2px;
+      font-weight: 1px;
+      color: #FFFFFF;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: normal;
+      margin: 14px 20px;
+      min-height: 60px;
+      min-width: 0;
+      outline: none;
+      padding: 16px 24px;
+      text-align: center;
+      text-decoration: none;
+      transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      will-change: transform;
+      width: 200px;
+  }
+
+  .button-27:disabled,
+  .button-submit:disabled {
+      pointer-events: none;
+  }
+
+  .button-27:hover,
+  .button-submit:disabled {
+      box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+      transform: translateY(-2px);
+  }
+
+  .button-27:active,
+  .button-submit:disabled {
+      box-shadow: none;
+      transform: translateY(0);
+  }
+
+  .body-afterwin {
+      background: rgb(222, 222, 222);
+      background: radial-gradient(circle, rgba(222, 222, 222, 1) 28%, rgba(117, 240, 82, 0.7317051820728291) 96%);
   }

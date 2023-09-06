@@ -12,14 +12,18 @@
       <h4 class="game-title">Guess the Digit!</h4>
       <h4 class="instructions">(Enter digits from 1-20)</h4>
     </header>
-    <div>
-      <button class="reset-btn">Play Again !</button>
-    </div>
-    <div class="game-info">
-      <p class="highscore-label">Highscore:<span class="score">0</span></p>
+    <div class="reset-container">
+      <button class="button-27">Play Again !</button>
+      <div class="game-info">
+        <p class="score-label">Lifes: <span class="score">20</span></p>
+        <p class="highscore-label">
+          Highscore: <span class="high-score">0</span>
+        </p>
+      </div>
     </div>
     <div class="game-container">
       <div class="input-submit-container">
+        <p class="result-label">Start Guessing...</p>
         <div class="lucky-number">🤔</div>
         <div class="input-container">
           <input
@@ -27,9 +31,8 @@
             type="number"
             placeholder="Enter your number"
           />
-          <p class="result-label">Start Guessing...</p>
         </div>
-        <button class="submit-btn">Click</button>
+        <button class="button-submit">Click</button>
       </div>
     </div>
     <footer>Made with Love in 🧡 🤍 💚</footer>
