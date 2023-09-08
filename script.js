@@ -66,24 +66,13 @@ submitBtn.addEventListener("click", function () {
       highScore = score;
       document.querySelector(".high-score").textContent = highScore;
     }
-  } else if (guessNumber > luckyNumber) {
+    //If guess number is not equal to lucky number
+  } else if (guessNumber !== luckyNumber) {
     if (score > 1) {
       displayModal();
-      gameResult.textContent = "Number Too High!!!";
-      gameEmoji.textContent = "👆";
-      score = score - 1;
-      gameScore.textContent = score;
-    } else {
-      displayModal();
-      gameResult.textContent = "You Lose.";
-      gameEmoji.textContent = "😭";
-      gameScore.textContent = 0;
-    }
-  } else if (guessNumber < luckyNumber) {
-    if (score > 1) {
-      displayModal();
-      gameResult.textContent = " Number Too Low!";
-      gameEmoji.textContent = "👇";
+      gameResult.textContent =
+        guessNumber > luckyNumber ? "Number Too High!" : "Number Too Low!";
+      gameEmoji.textContent = guessNumber > luckyNumber ? "👆" : "👇";
       score = score - 1;
       gameScore.textContent = score;
     } else {
