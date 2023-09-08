@@ -22,19 +22,23 @@
       </div>
     </div>
     <div class="game-container">
-      <div class="input-submit-container">
-        <p class="result-label">Start Guessing...</p>
-        <div class="lucky-number">🤔</div>
-        <div class="input-container">
-          <input
-            class="guess-input"
-            type="number"
-            placeholder="Enter your number"
-          />
-        </div>
-        <button class="button-submit">Click</button>
+      <p class="result-label">Start Guessing...</p>
+      <div class="lucky-number">🤔</div>
+      <div class="input-container">
+        <input
+          class="guess-input"
+          type="number"
+          placeholder="Enter your number"
+        />
       </div>
+      <button class="button-submit">Click</button>
     </div>
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <p class="game-result"></p>
+      <div class="result-emoji"></div>
+    </div>
+    <div class="overlay hidden"></div>
     <footer>Made with Love in 🧡 🤍 💚</footer>
     <script src="script.js"></script>
   </body>

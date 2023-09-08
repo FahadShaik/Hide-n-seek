@@ -36,6 +36,7 @@
       justify-content: center;
       align-items: center;
       text-align: center;
+      flex-direction: column;
   }
 
   .lucky-number {
@@ -169,4 +170,52 @@
   .body-afterwin {
       background: rgb(222, 222, 222);
       background: radial-gradient(circle, rgba(222, 222, 222, 1) 28%, rgba(117, 240, 82, 0.7317051820728291) 96%);
+  }
+
+  .modal {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #fdf9f9;
+      width: 500px;
+      text-align: center;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 3rem 5rem;
+      z-index: 10;
+      border-radius: 5px;
+      padding: 12px;
+  }
+
+  .game-result {
+      font-size: 28px;
+  }
+
+  .result-emoji {
+      font-size: 160px;
+  }
+
+  .hidden {
+      display: none;
+  }
+
+  .overlay {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 864px;
+      background-color: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(3px);
+      z-index: 5;
+  }
+
+  .close-modal {
+      position: absolute;
+      top: 0;
+      right: 1rem;
+      font-size: 3rem;
+      color: #333;
+      cursor: pointer;
+      border: none;
+      background: none;
   }
